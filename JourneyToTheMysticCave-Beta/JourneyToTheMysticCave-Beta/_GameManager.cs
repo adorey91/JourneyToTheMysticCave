@@ -99,7 +99,7 @@ namespace JourneyToTheMysticCave_Beta
         {
             Console.CursorVisible = false;
 
-            Console.WriteLine("Journey To The Mystic Cave - Json Attempt");
+            Console.WriteLine("Text Based RPG Beta");
             Console.WriteLine();
             Console.WriteLine("Move:");
             DisplaySymbolsInColumns("Up   ", "W");

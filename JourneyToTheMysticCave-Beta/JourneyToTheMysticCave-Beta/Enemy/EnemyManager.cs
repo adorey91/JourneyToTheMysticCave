@@ -33,14 +33,14 @@ namespace JourneyToTheMysticCave_Beta
             this.player = player;
             this.map = map;
 
-            for (int i = 0; i < stats.Ranger.Count; i++)
-                enemies.Add(new Ranger(stats.Ranger.Count, stats.Ranger.Character, stats.Ranger.Name, stats.Ranger.Damage, stats.Ranger.Attack, legendColors, player, log, this, map, stats));
-            for (int i = 0; i < stats.Mage.Count; i++)
-                enemies.Add(new Mage(stats.Mage.Count, stats.Mage.Character, stats.Mage.Name, stats.Mage.Damage, stats.Mage.Attack, legendColors, player, log, map, this, stats));
-            for (int i = 0; i < stats.Melee.Count; i++)
-                enemies.Add(new Melee(stats.Melee.Count, stats.Melee.Character, stats.Melee.Name, stats.Melee.Damage, stats.Melee.Attack, legendColors, player, log, this, map, stats));
-            for (int i = 0; i < stats.Boss.Count; i++)
-                enemies.Add(new Boss(stats.Boss.Count, stats.Boss.Character, stats.Boss.Name, stats.Boss.Damage, stats.Boss.Attack, legendColors, player, log, this, map, stats));
+            for (int i = 0; i < stats.RangerCount; i++)
+                enemies.Add(new Ranger(stats.RangerCount, stats.RangedCharacter, stats.RangerName, stats.RangerDamage, stats.RangerAttack, legendColors, player, log, this, map, stats));
+            for (int i = 0; i < stats.MageCount; i++)
+                enemies.Add(new Mage(stats.MageCount, stats.MageCharacter, stats.MageName, stats.MageDamage, stats.MageAttack, legendColors, player, log, map, this, stats));
+            for (int i = 0; i < stats.MeleeCount; i++)
+                enemies.Add(new Melee(stats.MeleeCount, stats.MeleeCharacter, stats.MeleeName, stats.MeleeDamage, stats.MeleeAttack, legendColors, player, log, this, map, stats));
+            for (int i = 0; i < stats.BossCount; i++)
+                enemies.Add(new Boss(stats.BossCount, stats.BossCharacter, stats.BossName, stats.BossDamage, stats.BossAttack, legendColors, player, log, this, map, stats));
 
             foreach (Enemy enemy in enemies)
             {
@@ -64,7 +64,7 @@ namespace JourneyToTheMysticCave_Beta
                         break;
                     case nameof(Boss):
                         enemy.healthSystem = new HealthSystem();
-                        enemy.healthSystem.health = stats.Boss.Health;
+                        enemy.healthSystem.health = stats.BossHealth;
                         break;
                 }
             }

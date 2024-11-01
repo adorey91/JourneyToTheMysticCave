@@ -92,7 +92,7 @@ namespace JourneyToTheMysticCave_Beta
             // Distribute potions
             for (int i = 0; i < potionCount; i++)
             {
-                var potion = new Potion(stats.Potion.Count, stats.Potion.Character, stats.Potion.Name, stats.Potion.Heal, legendColors, player);
+                var potion = new Potion(stats.PotionCount, stats.PotionCharacter, stats.PotionName, stats.PotionHeal, legendColors, player);
                 potion.pos = stats.PlaceCharacters(level, random);
                 items.Add(potion);
             }
@@ -100,7 +100,7 @@ namespace JourneyToTheMysticCave_Beta
             // Distribute money
             for (int i = 0; i < moneyCount; i++)
             {
-                var money = new Money(stats.Money.Count, stats.Money.Character, stats.Money.Name, legendColors, player);
+                var money = new Money(stats.MoneyCount, stats.MoneyCharacter, stats.MoneyName, legendColors, player);
                 money.pos = stats.PlaceCharacters(level, random);
                 items.Add(money);
             }
@@ -108,7 +108,7 @@ namespace JourneyToTheMysticCave_Beta
             // Distribute swords
             for (int i = 0; i < swordCount; i++)
             {
-                var sword = new Sword(stats.Sword.Count, stats.Sword.Character, stats.Sword.Name, stats.Sword.Multiplier, legendColors, player);
+                var sword = new Sword(stats.SwordCount, stats.SwordCharacter, stats.SwordName, stats.SwordMultiplier, legendColors, player);
                 sword.pos = stats.PlaceCharacters(level, random);
                 items.Add(sword);
             }
@@ -116,7 +116,7 @@ namespace JourneyToTheMysticCave_Beta
             // Distribute traps
             for (int i = 0; i < trapCount; i++)
             {
-                var trap = new Trap(stats.Trap.Count, stats.Trap.Character, stats.Trap.Name, stats.Trap.Damage, legendColors, player, enemyManager, levelManager);
+                var trap = new Trap(stats.TrapCount, stats.TrapCharacter, stats.TrapName, stats.TrapDamage, legendColors, player, enemyManager, levelManager);
                 trap.pos = stats.PlaceCharacters(level, random);
                 items.Add(trap);
             }

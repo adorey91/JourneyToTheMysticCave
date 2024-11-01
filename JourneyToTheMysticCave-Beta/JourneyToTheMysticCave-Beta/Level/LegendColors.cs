@@ -45,26 +45,26 @@ namespace JourneyToTheMysticCave_Beta
             Console.SetCursorPosition(columnCount, rowCount++);
             Console.WriteLine("Map Legend:");
             Console.SetCursorPosition(columnCount, rowCount++);
-            DisplayChar(gameStats.Player.Character, gameStats.Player.Name);
+            DisplayChar(gameStats.PlayerCharacter, gameStats.PlayerName);
             Console.SetCursorPosition(columnCount, rowCount++);
             if (level == 0)
-                DisplayChar(gameStats.Ranger.Character, gameStats.Ranger.Name);
+                DisplayChar(gameStats.RangedCharacter, gameStats.RangerName);
             if (level == 1)
-                DisplayChar(gameStats.Mage.Character, gameStats.Mage.Name);
+                DisplayChar(gameStats.MageCharacter, gameStats.MageName);
             if (level == 2)
             {
-                DisplayChar(gameStats.Melee.Character, gameStats.Melee.Name);
+                DisplayChar(gameStats.MeleeCharacter, gameStats.MeleeName);
                 Console.SetCursorPosition(columnCount, rowCount++);
-                DisplayChar(gameStats.Boss.Character, gameStats.Boss.Name);
+                DisplayChar(gameStats.BossCharacter, gameStats.BossName);
             }
             Console.SetCursorPosition(columnCount, rowCount++);
-            DisplayChar(gameStats.Money.Character, gameStats.Money.Name);
+            DisplayChar(gameStats.MoneyCharacter, gameStats.MoneyName);
             Console.SetCursorPosition(columnCount, rowCount++);
-            DisplayChar(gameStats.Potion.Character, gameStats.Potion.Name);
+            DisplayChar(gameStats.PotionCharacter, gameStats.PotionName);
             Console.SetCursorPosition(columnCount, rowCount++);
-            DisplayChar(gameStats.Trap.Character, gameStats.Trap.Name);
+            DisplayChar(gameStats.TrapCharacter, gameStats.TrapName);
             Console.SetCursorPosition(columnCount, rowCount++);
-            DisplayChar(gameStats.Sword.Character, gameStats.Sword.Name);
+            DisplayChar(gameStats.SwordCharacter, gameStats.SwordName);
             Console.SetCursorPosition(columnCount, rowCount++);
             DisplayChar('*', "Next Area");
             Console.SetCursorPosition(columnCount, rowCount++);
@@ -110,33 +110,33 @@ namespace JourneyToTheMysticCave_Beta
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
                     Console.BackgroundColor = ConsoleColor.Blue;
                     break;
-                case var _ when c == gameStats.Sword.Character: // Sword (item)
+                case var _ when c == gameStats.SwordCharacter: // Sword (item)
                     Console.ForegroundColor = ConsoleColor.DarkYellow;
                     break;
-                case var _ when c == gameStats.Money.Character: // money (item)
+                case var _ when c == gameStats.MoneyCharacter: // money (item)
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.BackgroundColor = ConsoleColor.Green;
                     break;
-                case var _ when c == gameStats.Trap.Character: // trap (item)
+                case var _ when c == gameStats.TrapCharacter: // trap (item)
                     Console.ForegroundColor = ConsoleColor.DarkCyan;
                     Console.BackgroundColor = ConsoleColor.Black;
                     break;
-                case var _ when c == gameStats.Melee.Character: // Slime
+                case var _ when c == gameStats.MeleeCharacter: // Slime
                     Console.ForegroundColor = ConsoleColor.Green;
                     break;
-                case var _ when c == gameStats.Ranger.Character: // Ranged enemy
+                case var _ when c == gameStats.RangedCharacter: // Ranged enemy
                     Console.ForegroundColor = ConsoleColor.Magenta;
                     break;
-                case var _ when c == gameStats.Mage.Character: // Mage
+                case var _ when c == gameStats.MageCharacter: // Mage
                     Console.ForegroundColor = ConsoleColor.Magenta;
                     break;
-                case var _ when c == gameStats.Boss.Character: // boss - enemy
+                case var _ when c == gameStats.BossCharacter: // boss - enemy
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     break;
-                case var _ when c == gameStats.Player.Character: // (Player)
+                case var _ when c == gameStats.PlayerCharacter: // (Player)
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     break;
-                case var _ when c == gameStats.Potion.Character: // Potion (item)
+                case var _ when c == gameStats.PotionCharacter: // Potion (item)
                     Console.ForegroundColor = ConsoleColor.Red;
                     break;
                 case '*': // next area

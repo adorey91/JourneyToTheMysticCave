@@ -55,11 +55,11 @@ namespace JourneyToTheMysticCave_Beta
             this.itemManager = itemManager;
             this.shop = shop;
 
-            healthSystem.health = gameStats.Player.Health;
-            character = gameStats.Player.Character;
-            pos = gameStats.Player.Pos;
-            damage = gameStats.Player.Damage;
-            name = gameStats.Player.Name;
+            healthSystem.health = gameStats.PlayerHealth;
+            character = gameStats.PlayerCharacter;
+            pos = gameStats.PlayerPos;
+            damage = gameStats.PlayerDamage;
+            name = gameStats.PlayerName;
         }
 
         public void Update()

@@ -1,9 +1,9 @@
 ﻿
 namespace JourneyToTheMysticCave_Beta
 {
-    internal struct Point2D
+    public struct Point2D
     {
-        public int x;
-        public int y;
+        public int x { get; set; }
+        public int y { get; set; }
     }
 }

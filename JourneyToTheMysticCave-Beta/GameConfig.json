@@ -1,0 +1,71 @@
+{
+  "Player": {
+    "Name": "George",
+    "Character": "G",
+    "Health": 65,
+    "Damage": 30,
+    "Pos": {
+      "x": 6,
+      "y": 14
+    }
+  },
+  "Ranger": {
+    "Count": 3,
+    "Character": "R",
+    "Name": "Ranger",
+    "Damage": 1,
+    "MinHp": 35,
+    "MaxHp": 60,
+    "Attack": "by Ranger arrow - 1 damage"
+  },
+  "Mage": {
+    "Count": 3,
+    "Character": "M",
+    "Name": "Mage",
+    "Damage": 3,
+    "MinHp": 40,
+    "MaxHp": 65,
+    "Attack": "by mage magic - 3 damage"
+  },
+  "Melee": {
+    "Count": 25,
+    "Character": "S",
+    "Name": "Slime",
+    "Damage": 1,
+    "MinHp": 2,
+    "MaxHp": 10,
+    "Attack": "by Slime sludge - 1 damage"
+  },
+  "Boss": {
+    "Count": 1,
+    "Character": "B",
+    "Name": "Boss",
+    "Damage": 6,
+    "Health": 200,
+    "Attack": "by a giant fist - 6 damage"
+  },
+  "Money": {
+    "Count": 6,
+    "Character": "$",
+    "Name": "Money"
+  },
+  "Potion": {
+    "Count": 6,
+    "Character": "P",
+    "Name": "Potion",
+    "Heal": 10
+  },
+  "Trap": {
+    "Count": 30,
+    "Character": "T",
+    "Name": "Trap",
+    "Damage": 4
+  },
+  "Sword": {
+    "Count": 3,
+    "Character": "t",
+    "Name": "Sword",
+    "dMultiplier": 10
+  },
+  "PoisonDamage": 5
+}
