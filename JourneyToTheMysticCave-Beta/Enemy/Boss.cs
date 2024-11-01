@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace JourneyToTheMysticCave_Beta
 {
@@ -27,6 +23,7 @@ namespace JourneyToTheMysticCave_Beta
 
         private void Movement()
         {
+            // Always moves towards player
             dx = Math.Sign(player.pos.x - pos.x);
             dy = Math.Sign(player.pos.y - pos.y);
 

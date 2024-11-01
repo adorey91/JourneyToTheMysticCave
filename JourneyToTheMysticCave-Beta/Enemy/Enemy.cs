@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace JourneyToTheMysticCave_Beta
 {
@@ -15,8 +10,8 @@ namespace JourneyToTheMysticCave_Beta
         public Player player;
         public Map map;
         public Gamelog log;
-        GameStats stats;
-        LegendColors legendColors;
+        readonly GameStats stats;
+        readonly LegendColors legendColors;
         
         public bool processed;
         public bool inDeep;

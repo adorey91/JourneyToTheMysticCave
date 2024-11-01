@@ -1,14 +1,8 @@
-﻿using JourneyToTheMysticCave_Beta.Items;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace JourneyToTheMysticCave_Beta
 {
-    internal class _GameManager
+    internal class GameManager
     {
         #region Declarations
         Map map = new Map();
@@ -27,7 +21,7 @@ namespace JourneyToTheMysticCave_Beta
         bool playerWon = false;
         #endregion
 
-        public _GameManager()
+        public GameManager()
         {
             Init();
         }

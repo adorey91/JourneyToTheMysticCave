@@ -75,7 +75,7 @@ namespace JourneyToTheMysticCave_Beta
             }
         }
 
-
+        // Used to place Characters on levels
         public Point2D PlaceCharacters(int levelNumber, Random random)
         {
             int x, y;

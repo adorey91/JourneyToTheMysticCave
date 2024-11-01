@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace JourneyToTheMysticCave_Beta
 {
@@ -31,8 +27,7 @@ namespace JourneyToTheMysticCave_Beta
             }
         }
 
-       
-
+        // Get Entity at a certain position. This will return either the entity or nothing
         private GameEntity GetEntityAtPosition(int x, int y)
         {
             foreach (Enemy enemy in enemyManager.enemies)

@@ -101,7 +101,7 @@
     <Compile Include="Quest2.cs" />
     <Compile Include="Quest3.cs" />
     <Compile Include="QuestManager.cs" />
-    <Compile Include="_GameManager.cs" />
+    <Compile Include="GameManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace JourneyToTheMysticCave_Beta
 {
     internal class EnemyManager
     {
-        public GameStats stats;
-        public LevelManager levelManager;
-        LegendColors legendColors;
-        Gamelog log;
-        Player player;
+        private GameStats stats;
+        private LevelManager levelManager;
+        private LegendColors legendColors;
+        private Gamelog log;
+        private Player player;
+        private Map map;
+        
         Random random = new Random();
-        Map map;
         public List<Enemy> enemies;
         public int meleeCount;
+        
         bool firstDead = false;
 
         public EnemyManager()
