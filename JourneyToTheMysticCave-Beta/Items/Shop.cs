@@ -48,7 +48,7 @@ namespace JourneyToTheMysticCave_Beta
                 {
                     player.poisonBoots = true;
                     player.moneyCount -= bootCost;
-                    lastPurchase = "Posion boots(poison immunity)";
+                    lastPurchase = "Poison boots(poison immunity)";
                 }
             }
         }
@@ -76,16 +76,16 @@ namespace JourneyToTheMysticCave_Beta
             if (isShopOpen == false)
             {
                 Console.SetCursorPosition(col, row);
-                Console.WriteLine("+--------------------------------------------------------+");
+                Console.WriteLine("+----------------------------------------------------+");
                 Console.SetCursorPosition(col, row+1);
                 Console.WriteLine("Shop closed");
                 Console.SetCursorPosition(col, row+2);
-                Console.WriteLine("+--------------------------------------------------------+");
+                Console.WriteLine("+----------------------------------------------------+");
             }
             else if (isShopOpen == true)
             {
                 Console.SetCursorPosition(col, row);
-                Console.WriteLine("+--------------------------------------------------------+");
+                Console.WriteLine("+----------------------------------------------------+");
                 Console.SetCursorPosition(col, row+1);
                 Console.WriteLine("Welcome to the shop!");
                 Console.SetCursorPosition(col, row+2);
@@ -97,7 +97,7 @@ namespace JourneyToTheMysticCave_Beta
                 Console.SetCursorPosition(col, row+5);
                 Console.WriteLine("Last purchase: " + lastPurchase);
                 Console.SetCursorPosition(col, row + 6);
-                Console.WriteLine("+--------------------------------------------------------+");
+                Console.WriteLine("+----------------------------------------------------+");
             }
         }
 

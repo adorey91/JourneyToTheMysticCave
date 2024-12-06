@@ -3,7 +3,7 @@
     "Name": "George",
     "Character": "G",
     "Health": 65,
-    "Damage": 30,
+    "Damage": 15,
     "Pos": {
       "x": 6,
       "y": 14
@@ -45,13 +45,13 @@
     "Attack": "by a giant fist - 6 damage"
   },
   "Money": {
-    "Count": 6,
+    "Count": 9,
     "Character": "$",
     "Name": "Money"
   },
   "Potion": {
     "Count": 6,
-    "Character": "P",
+    "Character": "H",
     "Name": "Potion",
     "Heal": 10
   },
@@ -65,7 +65,7 @@
     "Count": 3,
     "Character": "t",
     "Name": "Sword",
-    "dMultiplier": 10
+    "Multiplier": 10
   },
   "PoisonDamage": 5
 }

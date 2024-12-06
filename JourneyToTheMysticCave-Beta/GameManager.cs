@@ -31,7 +31,7 @@ namespace JourneyToTheMysticCave_Beta
             TutorialText();
             map.Update();
             hUD.Update();
-
+            shop.Update();
             questManager.AddQuests();
             questManager.Update();
 
@@ -93,25 +93,32 @@ namespace JourneyToTheMysticCave_Beta
         {
             Console.CursorVisible = false;
 
-            Console.WriteLine("Journey To The Mystic Cave - Json Attempt");
-            Console.WriteLine();
-            Console.WriteLine("Move:");
-            DisplaySymbolsInColumns("Up   ", "W");
-            DisplaySymbolsInColumns("Up-Left", "Q");
-            Console.WriteLine();
-            DisplaySymbolsInColumns("Down ", "S");
-            DisplaySymbolsInColumns("Up-Right", "E");
-            Console.WriteLine();
-            DisplaySymbolsInColumns("Left ", "A");
-            DisplaySymbolsInColumns("Down-Left", "Z");
-            Console.WriteLine();
-            DisplaySymbolsInColumns("Right", "D");
-            DisplaySymbolsInColumns("Down-Right", "C");
-            Console.WriteLine();
+            Console.WriteLine("===========================================================");
+            Console.WriteLine("                 Journey To The Mystic Cave                ");
+            Console.WriteLine("                        JSON Attempt                     ");
+            Console.WriteLine("===========================================================");
             Console.WriteLine();
 
-            Console.WriteLine("Press any key to continue");
+            Console.WriteLine("                     Move Controls Guide");
+            Console.WriteLine();
+            DisplayCompactControls("Up", "W", "Up-Left", "Q", "Up-Right", "E");
+            DisplayCompactControls("Down", "S", "Down-Left", "Z", "Down-Right", "C");
+            DisplayCompactControls("Left", "A", "Right", "D", null, null);
+
+            Console.WriteLine();
+            Console.WriteLine("===========================================================");
+            Console.WriteLine("        Press any key to embark on your journey...");
+            Console.WriteLine("===========================================================");
             Console.ReadKey(true);
+            Console.Clear();
+        }
+
+        private void DisplayCompactControls(string label1, string key1, string label2, string key2, string label3, string key3)
+        {
+            if(string.IsNullOrWhiteSpace(label3) && string.IsNullOrWhiteSpace(key3))
+                Console.WriteLine($"  {label1,-10}: {key1,-3}    {label2,-10}: {key2,-3}");
+            else
+                Console.WriteLine($"  {label1,-10}: {key1,-3}    {label2,-10}: {key2,-3}    {label3,-10}: {key3,-3}");
         }
 
         private void DisplaySymbolsInColumns(string direction, string description)

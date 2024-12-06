@@ -34,9 +34,9 @@ namespace JourneyToTheMysticCave_Beta
             this.map = map;
             this.enemyManager = enemyManager;
 
-            DistributeItems(1, 2, 1, 0, 0);
-            DistributeItems(2, 2, 1, 5, 1);
-            DistributeItems(3, 2, 1, 25, 2);
+            DistributeItems(1, 3, 1, 0, 0);
+            DistributeItems(2, 3, 1, 5, 1);
+            DistributeItems(3, 3, 1, 25, 2);
         }
 
         public void Update()
